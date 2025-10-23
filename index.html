@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Solver and Grading system</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="topic">Quadratic Equation Solver and Grading System</h1>
+            <p class="subtitle">Solve Quadratic equations and convert scores to letter grades</p>
+        </header>
+
+        <main>
+            <section class="Quadratic-section">
+                <h2>Quadratic Equation Solver</h2>
+                <p class="instructions">
+                    Enter the coefficients for the quadratic equatiion: ax&sup2; + bx + c
+                </p>
+
+                <form id="quadraticForm">
+                    <div class="input-group">
+                        <label for="a">
+                            Coefficient a (&ne; 0)
+                        </label>
+                        <input type="number" id="a" step="any" placeholder="Enter value for a" required>
+                        <span class="error-message" id="aError"></span>
+
+                          <div class="input-group">
+                        <label for="b" >
+                            Coefficient b
+                        </label>
+                        <input type="number" id="b" step="any"  placeholder="Enter value for b" required>
+                        <span class="error-message" id="bError"></span>
+
+                          <div class="input-group">
+                        <label for="a">
+                            Coefficient c
+                        </label>
+                        <input type="number" id="c" step="any" placeholder="Enter value for c" required>
+                        <span class="error-message" id="cError"></span>
+
+                    </div>
+                <div class="button-group">
+                    <button type="submit" class="btn-primary">Solve Equation</button>
+                    <button type="button" class="btn-secondary" id="resetQuadratic">Reset</button>
+                </form>
+
+                <div class="results" id="quadraticResults"></div>
+                </div>
+            </section>
+
+              <section class="grading-section">
+                <h2>Score to Grade Converter</h2>
+                <p class="instructions">Enter a score (0-100) to convert to a letter grade</p>
+                
+                <form id="gradingForm">
+                    <div class="input-group">
+                        <label for="score">Score (0-100):</label>
+                        <input type="number" id="score" min="0" max="100" required>
+                        <span class="error-message" id="scoreError"></span>
+                    </div>
+                    
+                    <div class="button-group">
+                        <button type="submit" class="btn-primary">Convert to Grade</button>
+                        <button type="button" class="btn-secondary" id="resetGrading">Reset</button>
+                    </div>
+                </form>
+                
+                <div class="results" id="gradingResults">
+                    <!-- Results will be displayed here -->
+                </div>
+            </section>
+
+            <section class="grade-scale">
+                <h3>Grade Scale</h3>
+                <table class="grade-table">
+                    <thead>
+                        <tr>
+                            <th>Grade</th>
+                            <th>Score Range</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="grade-Aplus">A+</td>
+                            <td>85 - 100</td>
+                        </tr>
+                        <tr>
+                            <td class="grade-A">A</td>
+                            <td>75 - 84</td>
+                        </tr>
+                        <tr>
+                            <td class="grade-Bplus">B+</td>
+                            <td>65 - 74</td>
+                        </tr>
+                        <tr>
+                            <td class="grade-B">B</td>
+                            <td>60 - 64</td>
+                        </tr>
+                        <tr>
+                            <td class="grade-Cplus">C+</td>
+                            <td>55 - 59</td>
+                        </tr>
+                        <tr>
+                            <td class="grade-C">C</td>
+                            <td>50 - 54</td>
+                        </tr>
+                        <tr>
+                            <td class="grade-D">D</td>
+                            <td>0 - 49</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+            <p>Name: CHAKULETELA MUSUKWA <br>
+            sin : 202405691 <br>
+         Course : ICT 251</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+        </main>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
